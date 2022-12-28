@@ -1,0 +1,53 @@
+---
+---
+
+<div
+    class="absolute top-0 right-0 bg-overlay w-10 h-10 flex rounded-l rounded-b"
+>
+    <!--Toggle for dark mode-->
+    <button class="m-auto" id="darkmode-toggle" title="Toggle theme">
+        <script is:inline defer>
+            if (
+                localStorage.theme === "dark" ||
+                (!("theme" in localStorage) &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ) {
+                document.documentElement.classList.add("dark");
+                localStorage.theme = "dark";
+            } else {
+                document.documentElement.classList.remove("dark");
+                localStorage.theme = "light";
+            }
+            const toggleMode = () => {
+                console.log("toggling");
+                switch (localStorage.theme) {
+                    case "dark": {
+                        console.log("switched to light");
+                        document.documentElement.classList.remove("dark");
+                        localStorage.theme = "light";
+                        break;
+                    }
+                    case "light": {
+                        console.log("switched to dark");
+                        document.documentElement.classList.add("dark");
+                        localStorage.theme = "dark";
+                        break;
+                    }
+                }
+            };
+            let toggle = document.getElementById("darkmode-toggle");
+            toggle.addEventListener("click", toggleMode);
+        </script>
+        <svg
+            class="w-6 h-6 text-light-text dark:text-dark-text transition-all"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+        >
+            <path
+                fill-rule="evenodd"
+                d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 100-12 6 6 0 000 12z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </button>
+</div>

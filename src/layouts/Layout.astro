@@ -1,0 +1,38 @@
+---
+export interface Props {
+    title: string;
+}
+import Opts from "../components/Opts.astro";
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body
+        class="dark:bg-dark-base bg-light-base transition-colors delay-200 duration-300"
+    >
+        <Opts />
+        <div class="flex flex-col items-center justify-center w-full h-screen">
+            <div class="w-3/4 md:w-1/2 border-t-4 dark:border-t-dark-iris border-t-light-iris">
+                <slot />
+            </div>
+        </div>
+    </body>
+</html>
+<style is:global>
+    html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+    }
+    code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+</style>
