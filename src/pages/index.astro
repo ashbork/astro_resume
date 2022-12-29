@@ -14,9 +14,10 @@ const sectionHeaders = {
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Skills from "../components/Skills.astro";
-import resume from "../resume.json";
-import Opts from "../components/Opts.astro";
-const { basics } = resume;
+import resume from "../resumeDataPL.json";
+import Work from "../components/Work.astro";
+import Education from "../components/Education.astro";
+const { basics, skills, work, education } = resume;
 ---
 
 <Layout title="Welcome to Astro.">
