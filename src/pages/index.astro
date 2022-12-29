@@ -21,5 +21,8 @@ const { basics, skills, work, education } = resume;
 ---
 
 <Layout title="Welcome to Astro.">
-    <Basics basics={basics} />
+    <Header basics={basics} />
+    <Work work={work} />
+    <Education education={education} title={sectionHeaders.en.education} />
+    <Skills skills={skills} />
 </Layout>
