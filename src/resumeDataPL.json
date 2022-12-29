@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "basics": {
         "name": "Ashley Borkowicz",
         "label": "Support Hero / Product Specialist",
@@ -31,39 +30,36 @@
             "position": "Support Hero / Product Specialist",
             "url": "https://www.livechat.com/",
             "startDate": "2022-06-15",
-            "summary": "Obsługa klientów w czasie rzeczywistym, techniczny troubleshooting i automatyzacja procesów przy użyciu języków Python i JavaScript. Bliska współpraca z zespołem deweloperskim, zbieranie i analiza feedbacku, UXR. Budowa narzędzi wewnętrznych przy użyciu Pythona",
+            "summary": "Obsługa klientów w czasie rzeczywistym, techniczny troubleshooting i automatyzacja procesów przy użyciu języków Python i JavaScript. Bliska współpraca z zespołem deweloperskim, zbieranie i analiza feedbacku, UXR. Budowa narzędzi wewnętrznych przy użyciu Pythona i JavaScriptu.",
             "highlights": ["Nominowany na Customer Advocate roku 2022", "Dzięki eksperckiej wiedzy i empatycznemu wsparciu osiągnął ~95% CSAT", "Zredukował czasu rozwiązywania wewnętrznych problemów z produktem HelpDesk o ~60%"]
         }
     ],
     "volunteer": [],
-    "education": [],
+    "education": [
+        {
+            "institution": "Technikum nr 7 im. Polskich Zwycięzców Enigmy Wrocław",
+            "area": "Technik informatyk",
+            "studyType": "Technik informatyk",
+            "startDate": "2017-09-01",
+            "endDate": "2021-06-01",
+            "courses": ["EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci", "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych"]
+        }
+    ],
     "awards": [],
     "publications": [],
     "skills": [
-        {
-            "name": "Programowanie",
-            "level": "Junior",
-            "keywords": ["Python + mypy", "SQL", "Podstawy Rust", "Postawy programowania funkcyjnego"]
-        }, {
-            "name": "Technologie webowe",
-            "level": "Junior",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Astro",
-                "TailwindCSS"
-            ]
-        }, {
-            "name": "Inne",
-            "keywords": [
-                "Linux",
-                "Git",
-                "Miro",
-                "Jira",
-                "Confluence"
-            ]
-        }
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python w/ mypy",
+        "Flask",
+        "SQL",
+        "Git",
+        "Programowanie funkcyjne",
+        "Linux",
+        "UXR",
+        "Wsparcie klienta",
+        "Scala3"
     ],
     "languages": [
         {
