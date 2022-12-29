@@ -1,0 +1,81 @@
+---
+import Box from "./Box.astro";
+
+export interface Props {
+    work?: Work[];
+}
+
+type Work = {
+    name: string;
+    location: string;
+    description: string;
+    position: string;
+    url: string;
+    startDate: string;
+    endDate?: string;
+    summary: string;
+    highlights: string[];
+};
+
+const workedTime = (startDate: string, endDate?: string) => {
+    const start = new Date(startDate.slice(0, 7)); // ignore day
+    const end = endDate ? new Date(endDate) : new Date();
+    const diff = end.getTime() - start.getTime();
+    const months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
+    const years = Math.floor(months / 12);
+    if (years > 0) {
+        return `${years} years and ${months} months`;
+    } else {
+        return `${months} months`;
+    }
+};
+
+const { work } = Astro.props;
+---
+
+<Box title="Experience">
+    {
+        work &&
+            work.map((item) => (
+                <div class="flex flex-col gap-2">
+                    <h3 class="font-semibold dark:text-dark-foam  text-light-foam text-lg">
+                        {item.name}
+                    </h3>
+                    <h4 class=" flex gap-5">
+                        <span>{item.position}</span>
+                        <span class="dark:text-dark-subtle text-light-subtle">
+                            {item.startDate.slice(0, 7)} -{" "}
+                            {item.endDate || "ongoing"}
+                        </span>
+
+                        <span class="dark:text-dark-muted text-light-muted">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 inline-block align-middle object-center"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                            {workedTime(item.startDate, item.endDate)}
+                        </span>
+                    </h4>
+                    <p> {item.summary} </p>
+                    <ul class="list-disc list-inside">
+                        {item.highlights.map((highlight) => (
+                            <li class="marker:dark:text-dark-love marker:text-light-love">
+                                {" "}
+                                {highlight}{" "}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))
+    }</Box
+>
