@@ -1,0 +1,46 @@
+---
+import Box from "./Box.astro";
+export interface Props {
+    education?: Education[];
+    title: string;
+}
+type Education = {
+    institution: string;
+    area: string;
+    studyType: string;
+    startDate: string;
+    endDate?: string;
+    courses?: string[];
+};
+const { education, title } = Astro.props;
+---
+
+<Box title="Education">
+    {
+        education &&
+            education.map((item) => (
+                <div class="flex flex-col gap-2">
+                    <h3 class="font-semibold text-lg dark:text-dark-foam text-light-foam">
+                        {item.institution}
+                    </h3>
+                    <h4 class="flex gap-5">
+                        <span>{item.area}</span>
+                        <span class="dark:text-dark-subtle text-light-subtle">
+                            {item.startDate.slice(0, 7)} -{" "}
+                            {(item.endDate && item.endDate.slice(0, 7)) ||
+                                "ongoing"}
+                        </span>
+                    </h4>
+                    {item.courses && (
+                        <ul class="list-disc list-inside">
+                            {item.courses.map((course) => (
+                                <li class="marker:dark:text-dark-love marker:text-light-love">
+                                    {course}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
+            ))
+    }
+</Box>
