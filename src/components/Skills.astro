@@ -1,0 +1,20 @@
+---
+import Box from "./Box.astro";
+export interface Props {
+    skills: string[];
+    title: string;
+}
+const { skills } = Astro.props;
+---
+
+<Box title="Skills">
+    <ul class="flex flex-wrap gap-2 pt-1">
+        {
+            skills.map((skill) => (
+                <li class="dark:bg-dark-highlightHigh bg-light-highlightHigh dark:text-dark-text text-light-text rounded-sm px-2 py-1">
+                    {skill}
+                </li>
+            ))
+        }
+    </ul>
+</Box>
