@@ -15,7 +15,7 @@ type Education = {
 const { education, title } = Astro.props;
 ---
 
-<Box title="Education">
+<Box title={title}>
     {
         education &&
             education.map((item) => (

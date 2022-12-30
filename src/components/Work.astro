@@ -3,6 +3,7 @@ import Box from "./Box.astro";
 
 export interface Props {
     work?: Work[];
+    title: string;
 }
 
 type Work = {
@@ -30,10 +31,10 @@ const workedTime = (startDate: string, endDate?: string) => {
     }
 };
 
-const { work } = Astro.props;
+const { work, title } = Astro.props;
 ---
 
-<Box title="Experience">
+<Box title={title}>
     {
         work &&
             work.map((item) => (

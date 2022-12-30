@@ -4,10 +4,10 @@ export interface Props {
     skills: string[];
     title: string;
 }
-const { skills } = Astro.props;
+const { skills, title } = Astro.props;
 ---
 
-<Box title="Skills">
+<Box title={title}>
     <ul class="flex flex-wrap gap-2 pt-1">
         {
             skills.map((skill) => (
