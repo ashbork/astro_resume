@@ -1,0 +1,86 @@
+{
+    "basics": {
+        "name": "Ashley Borkowicz",
+        "label": "Support Hero / Product Specialist",
+        "image": "",
+        "email": "maybork@pm.me",
+        "phone": "+48 511948508",
+        "summary": "Zaangażowany i elastyczny pasjonat IT, skupiony na dostarczeniu klientom jak najlepszego doświadczenia. Zawsze gotowy do nauki nowych rzeczy, w wolnym czasie amatorski Pythonista i łyżwiarz.",
+        "location": {
+            "city": "Poznań",
+            "countryCode": "PL"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "maybork",
+                "url": "https://github.com/maybork"
+            }, {
+                "network": "LinkedIn",
+                "username": "ashley-borkowicz",
+                "url": "https://www.linkedin.com/in/ashley-borkowicz-40618424b/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "LiveChat Inc",
+            "location": "Zdalnie, Polska",
+            "description": "LiveChat od 20 lat dostarcza narzędzia SaaS służące do komunikacji z klientami w czasie rzeczywistym, obsługując więcej niż 30 tys. klientów w ponad 150 państwach.",
+            "position": "Support Hero / Product Specialist",
+            "url": "https://www.livechat.com/",
+            "startDate": "2022-06-15",
+            "summary": "Obsługa klientów w czasie rzeczywistym, techniczny troubleshooting i automatyzacja procesów przy użyciu języków Python i JavaScript. Bliska współpraca z zespołem deweloperskim, zbieranie i analiza feedbacku, UXR. Budowa narzędzi wewnętrznych przy użyciu Pythona i JavaScriptu.",
+            "highlights": ["Nominowany na Customer Advocate roku 2022", "Dzięki eksperckiej wiedzy i empatycznemu wsparciu osiągnął ~95% CSAT", "Zredukował czasu rozwiązywania wewnętrznych problemów z produktem HelpDesk o ~60%"]
+        }
+    ],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "Technikum nr 7 im. Polskich Zwycięzców Enigmy Wrocław",
+            "area": "Technik informatyk",
+            "studyType": "Technik informatyk",
+            "startDate": "2017-09-01",
+            "endDate": "2021-06-01",
+            "courses": ["EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci", "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych"]
+        }
+    ],
+    "awards": [],
+    "publications": [],
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python w/ mypy",
+        "Flask",
+        "SQL",
+        "Git",
+        "Programowanie funkcyjne",
+        "Linux",
+        "UXR",
+        "Wsparcie klienta",
+        "Scala3"
+    ],
+    "languages": [
+        {
+            "language": "Polski",
+            "fluency": "Ojczysty"
+        }, {
+            "language": "Angielski",
+            "fluency": "C1"
+        }
+    ],
+    "interests": [
+        {
+
+            "keywords": ["Gry komputerowe", "Programowanie", "Łyżwiarstwo", "UX"]
+        }
+    ],
+    "references": [],
+    "projects": [],
+    "meta": {
+        "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+        "version": "v1.0.0",
+        "lastModified": "2017-12-24T15:53:00"
+    }
+}
