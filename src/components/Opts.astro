@@ -12,7 +12,7 @@ export interface Props {
         <script is:inline defer>
             const toggleLanguage = () => {
                 console.log("toggling");
-                switch (window.location.href.split("/")[3]) {
+                switch (window.location.href.split("/")[-1]) {
                     case "": {
                         console.log("switched to pl");
                         window.location.href = `${
