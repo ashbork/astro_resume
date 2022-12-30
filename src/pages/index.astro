@@ -1,28 +1,6 @@
 ---
-const sectionHeaders = {
-    pl: {
-        skills: "Umiejętności",
-        work: "Doświadczenie",
-        education: "Edukacja",
-    },
-    en: {
-        skills: "Skills",
-        work: "Work",
-        education: "Education",
-    },
-};
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Skills from "../components/Skills.astro";
-import resume from "../resumeDataPL.json";
-import Work from "../components/Work.astro";
-import Education from "../components/Education.astro";
-const { basics, skills, work, education } = resume;
+import BasePage from "../layouts/BasePage.astro";
+import resume from "../resumeDataEN.json";
 ---
 
-<Layout title="Welcome to Astro.">
-    <Header basics={basics} />
-    <Work work={work} />
-    <Education education={education} title={sectionHeaders.en.education} />
-    <Skills skills={skills} />
-</Layout>
+<BasePage language="en" resume={resume} />
