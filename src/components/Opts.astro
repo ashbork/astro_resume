@@ -12,21 +12,29 @@ export interface Props {
         <script is:inline defer>
             const toggleLanguage = () => {
                 console.log("toggling");
-                switch (window.location.href.slice(0, -1).split("/").at(-1)) {
-                    case "": {
+                switch (localStorage.getItem("lang")) {
+                    case "en": {
                         console.log("switched to pl");
-                        window.location.href = `${window.location.href}/pl`;
+                        localStorage.lang = "pl";
                         break;
                     }
                     case "pl": {
                         console.log("switched to en");
-                        window.location.href = window.location.href.slice(
-                            0,
-                            -3
-                        );
+                        localStorage.lang = "en";
+                        break;
+                    }
+                    case null: {
+                        console.log("switched to en");
+                        localStorage.lang = "en";
                         break;
                     }
                 }
+                console.log(window.location.pathname);
+                window.location.pathname = window.location.pathname.slice(
+                    0,
+                    -2
+                );
+                // This doesn't feel right
             };
 
             let langToggle = document.getElementById("language-toggle");
