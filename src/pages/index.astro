@@ -1,6 +1,16 @@
----
-import BasePage from "../layouts/BasePage.astro";
-import resume from "../resumeDataEN.json";
----
-
-<BasePage language="en" resume={resume} />
+<script>
+    // redirect user to page depending on the language in local storage. If no language is set, redirect to english
+    var lang = localStorage.getItem('lang');
+    console.log(window.location.pathname)
+    switch (lang) {
+        case null:
+            localStorage.setItem('lang', 'en');
+            break;
+        case 'en':
+            window.location.pathname = window.location.pathname + `en`;
+            break;
+        case 'pl':
+            window.location.pathname = window.location.pathname +`pl`;
+            break;
+    }
+</script>
