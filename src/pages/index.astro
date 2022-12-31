@@ -1,16 +1,15 @@
 <script>
     // redirect user to page depending on the language in local storage. If no language is set, redirect to english
-    var lang = localStorage.getItem('lang');
-    console.log(window.location.pathname)
+    var lang = localStorage.getItem("lang");
+    console.log(window.location.pathname);
     switch (lang) {
         case null:
-            localStorage.setItem('lang', 'en');
-            break;
-        case 'en':
+            localStorage.setItem("lang", "en");
+        case "en":
             window.location.pathname = window.location.pathname + `en`;
             break;
-        case 'pl':
-            window.location.pathname = window.location.pathname +`pl`;
+        case "pl":
+            window.location.pathname = window.location.pathname + `pl`;
             break;
     }
 </script>
