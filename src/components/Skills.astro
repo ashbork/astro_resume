@@ -8,7 +8,7 @@ const { skills, title } = Astro.props;
 ---
 
 <Box title={title}>
-    <ul class="flex flex-wrap gap-2 pt-1">
+    <ul class="flex flex-wrap gap-2 pt-1 print:list-disc">
         {
             skills.map((skill) => (
                 <li class="dark:bg-dark-highlightHigh bg-light-highlightHigh dark:text-dark-text text-light-text rounded-sm px-2 py-1">
