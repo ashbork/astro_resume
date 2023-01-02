@@ -31,7 +31,10 @@ const { basics } = Astro.props;
         aria-label="Contact info"
         class="flex dark:text-dark-rose text-light-rose justify-around flex-wrap transition-all"
     >
-        <a href={"mailto:" + basics.email} class="flex gap-2">
+        <a
+            href={"mailto:" + basics.email}
+            class="flex gap-2 hover:opacity-50 transition-all duration-100 ease-in-out"
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -48,7 +51,10 @@ const { basics } = Astro.props;
             </svg>
             <span>{basics.email}</span>
         </a>
-        <a href={"tel:" + basics.phone} class="flex gap-2">
+        <a
+            href={"tel:" + basics.phone}
+            class="flex gap-2 hover:opacity-50 transition-all duration-100 ease-in-out"
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -69,7 +75,10 @@ const { basics } = Astro.props;
         <!--linkedin-->
         {
             basics.profiles[1] && (
-                <a href={basics.profiles[1].url} class="flex gap-2">
+                <a
+                    href={basics.profiles[1].url}
+                    class="flex gap-2 hover:opacity-50  transition-all duration-100 ease-in-out"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -93,7 +102,10 @@ const { basics } = Astro.props;
         <!--github-->
         {
             basics.profiles[0] && (
-                <a href={basics.profiles[0].url} class="flex gap-2">
+                <a
+                    href={basics.profiles[0].url}
+                    class="flex gap-2 hover:opacity-50  transition-all duration-100 ease-in-out"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
