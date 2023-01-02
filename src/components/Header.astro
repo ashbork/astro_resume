@@ -33,6 +33,7 @@ const { basics } = Astro.props;
     >
         <a
             href={"mailto:" + basics.email}
+            target="_blank"
             class="flex gap-2 hover:opacity-50 transition-all duration-100 ease-in-out"
         >
             <svg
@@ -53,6 +54,7 @@ const { basics } = Astro.props;
         </a>
         <a
             href={"tel:" + basics.phone}
+            target="_blank"
             class="flex gap-2 hover:opacity-50 transition-all duration-100 ease-in-out"
         >
             <svg
@@ -77,6 +79,7 @@ const { basics } = Astro.props;
             basics.profiles[1] && (
                 <a
                     href={basics.profiles[1].url}
+                    target="_blank"
                     class="flex gap-2 hover:opacity-50  transition-all duration-100 ease-in-out"
                 >
                     <svg
@@ -104,6 +107,7 @@ const { basics } = Astro.props;
             basics.profiles[0] && (
                 <a
                     href={basics.profiles[0].url}
+                    target="_blank"
                     class="flex gap-2 hover:opacity-50  transition-all duration-100 ease-in-out"
                 >
                     <svg
