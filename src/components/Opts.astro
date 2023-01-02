@@ -5,7 +5,7 @@ export interface Props {
 ---
 
 <div
-    class="absolute top-0 right-0 bg-overlay w-16 h-10 flex rounded-l rounded-b"
+    class="absolute top-0 right-0 bg-overlay w-16 h-10 flex rounded-bl dark:bg-dark-overlay bg-light-overlay"
 >
     <!--Toggle for language -->
     <button class="m-auto" id="language-toggle" title="Toggle language">
@@ -47,7 +47,7 @@ export interface Props {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 print:hidden"
         >
             <path
                 stroke-linecap="round"
@@ -116,7 +116,7 @@ export interface Props {
             darkmodeToggle.addEventListener("click", toggleMode);
         </script>
         <svg
-            class="w-6 h-6 text-light-text dark:text-dark-text transition-all"
+            class="w-6 h-6 text-light-text dark:text-dark-text transition-all print:hidden"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"

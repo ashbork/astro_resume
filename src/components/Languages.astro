@@ -1,0 +1,25 @@
+---
+import Box from "./Box.astro";
+export interface Props {
+    languages: Language[];
+    title: string;
+}
+type Language = {
+    language: string;
+    fluency: string;
+};
+
+const { languages, title } = Astro.props;
+---
+
+<Box title={title}>
+    <ul class="list-disc list-inside">
+        {
+            languages.map((language) => (
+                <li class="marker:dark:text-dark-love marker:text-dark-love">
+                    {language.language} - {language.fluency}
+                </li>
+            ))
+        }
+    </ul>
+</Box>
