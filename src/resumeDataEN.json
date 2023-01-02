@@ -5,7 +5,7 @@
         "image": "",
         "email": "maybork@pm.me",
         "phone": "+48 511948508",
-        "summary": "Zaangażowany i elastyczny pasjonat IT, skupiony na dostarczeniu klientom jak najlepszego doświadczenia. Zawsze gotowy do nauki nowych rzeczy, w wolnym czasie amatorski Pythonista i łyżwiarz.",
+        "summary": "Passionate about programming and providing a great UX. Madly in love with Python and Linux, interested in functional programming. Flexible and empathetic, they're always up for a new challenge.",
         "location": {
             "city": "Poznań",
             "countryCode": "PL"
@@ -25,24 +25,24 @@
     "work": [
         {
             "name": "LiveChat Inc",
-            "location": "Zdalnie, Polska",
-            "description": "LiveChat od 20 lat dostarcza narzędzia SaaS służące do komunikacji z klientami w czasie rzeczywistym, obsługując więcej niż 30 tys. klientów w ponad 150 państwach.",
+            "location": "Remote, Poland",
+            "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
             "position": "Support Hero / Product Specialist",
             "url": "https://www.livechat.com/",
             "startDate": "2022-06-15",
-            "summary": "Obsługa klientów w czasie rzeczywistym, techniczny troubleshooting i automatyzacja procesów przy użyciu języków Python i JavaScript. Bliska współpraca z zespołem deweloperskim, zbieranie i analiza feedbacku, UXR. Budowa narzędzi wewnętrznych przy użyciu Pythona i JavaScriptu.",
-            "highlights": ["Nominowany na Customer Advocate roku 2022", "Dzięki eksperckiej wiedzy i empatycznemu wsparciu osiągnął ~95% CSAT", "Zredukował czasu rozwiązywania wewnętrznych problemów z produktem HelpDesk o ~60%"]
+            "summary": "Real-time customer service, technical troubleshooting and automation of internal processes with use of Python and JS. Close cooperation with the HelpDesk development team, UXR, collection and analysis of customer feedback. ",
+            "highlights": ["'Customer advocate' of 2022 nominee", "Reached ~95% CSAT due to expert knowledge and great attitude", "Reduced the resolution time of internal issues with HelpDesk by ~60%"]
         }
     ],
     "volunteer": [],
     "education": [
         {
             "institution": "Technikum nr 7 im. Polskich Zwycięzców Enigmy Wrocław",
-            "area": "Technik informatyk",
-            "studyType": "Technik informatyk",
+            "area": "IT specialist",
+            "studyType": "IT specialist",
             "startDate": "2017-09-01",
             "endDate": "2021-06-01",
-            "courses": ["EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci", "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych"]
+            "courses": ["EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci (Installation and utilization of computer systems, peripherals and networks)", "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych (Programming, building and administrating websites and databases)"]
         }
     ],
     "awards": [],
@@ -55,25 +55,25 @@
         "Flask",
         "SQL",
         "Git",
-        "Programowanie funkcyjne",
+        "Functional programming",
         "Linux",
         "UXR",
-        "Wsparcie klienta",
+        "Customer support",
         "Scala3"
     ],
     "languages": [
         {
-            "language": "Polski",
-            "fluency": "Ojczysty"
+            "language": "Polish",
+            "fluency": "Native"
         }, {
-            "language": "Angielski",
+            "language": "English",
             "fluency": "C1"
         }
     ],
     "interests": [
         {
 
-            "keywords": ["Gry komputerowe", "Programowanie", "Łyżwiarstwo", "UX"]
+            "keywords": ["Gaming", "Programming", "Ice skating", "UX"]
         }
     ],
     "references": [],
