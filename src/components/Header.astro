@@ -14,8 +14,9 @@ export interface Props {
             [k: string]: unknown;
         }[];
     };
+    language: "pl" | "en";
 }
-const { basics } = Astro.props;
+const { basics, language } = Astro.props;
 ---
 
 <div
@@ -131,4 +132,19 @@ const { basics } = Astro.props;
         }
     </div>
     <p>{basics.summary}</p>
+    <div class="hidden print:block mt-2">
+        {
+            language == "en" ? (
+                <span>
+                    This resume looks better in the browser! Take a look here:
+                    https://maybork.github.io/astro_resume/en/
+                </span>
+            ) : (
+                <span>
+                    To CV wygląda lepiej w przeglądarce! Zajrzyj tutaj:
+                    https://maybork.github.io/astro_resume/pl/
+                </span>
+            )
+        }
+    </div>
 </div>
