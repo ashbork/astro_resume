@@ -19,8 +19,8 @@ print("PDF build successful!")
 # kill node process
 try:
     dev.send_signal(CTRL_C_EVENT)
+    time.sleep(0.5)
+    dev.communicate(b"y\n")
 except KeyboardInterrupt:
     pass # ignoring ctrl+c
-time.sleep(0.5)
-dev.communicate(b"y\n")
 # this is hacky as all hell, but it lets me kill the dev server
