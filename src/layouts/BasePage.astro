@@ -4,11 +4,13 @@ const sectionHeaders = {
         skills: "Umiejętności",
         work: "Doświadczenie",
         education: "Edukacja",
+        languages: "Języki",
     },
     en: {
         skills: "Skills",
         work: "Work",
         education: "Education",
+        languages: "Languages",
     },
 };
 
@@ -16,6 +18,7 @@ export interface Props {
     language: "pl" | "en";
     resume;
 }
+
 const { language, resume } = Astro.props;
 const titles = sectionHeaders[language];
 import Opts from "../components/Opts.astro";
@@ -24,8 +27,9 @@ import Header from "../components/Header.astro";
 import Skills from "../components/Skills.astro";
 import Work from "../components/Work.astro";
 import Education from "../components/Education.astro";
+import Languages from "../components/Languages.astro";
 
-const { basics, skills, work, education } = resume;
+const { basics, skills, work, education, languages } = resume;
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,4 +38,5 @@ const { basics, skills, work, education } = resume;
     <Work work={work} title={titles.work} />
     <Education education={education} title={titles.education} />
     <Skills skills={skills} title={titles.skills} />
+    <Languages languages={languages} title={titles.languages} />
 </Layout>
