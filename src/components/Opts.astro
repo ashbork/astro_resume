@@ -5,10 +5,67 @@ export interface Props {
 ---
 
 <div
-    class="absolute top-0 right-0 bg-overlay w-16 h-10 flex rounded-bl dark:bg-dark-overlay bg-light-overlay"
+    class="absolute top-0 right-0 bg-overlay w-24 h-10 flex rounded-bl dark:bg-dark-overlay bg-light-overlay shadow-md"
 >
+    <!--Download button with dropdown menu-->
+    <button
+        class="m-auto hover:text-light-rose hover:dark:text-dark-rose transition-colors duration-200 ease-in-out"
+        id="download-button"
+        title="Download resume"
+        data-target="#download-dropdown"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 print:hidden hover:text-light-rose hover:dark:text-dark-rose duration-200 ease-in-out"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            ></path>
+        </svg>
+        <div
+            class="hidden absolute top-12 right-14 text-light-text dark:text-dark-text bg-light-highlightHigh dark:bg-dark-highlightHigh rounded-md shadow-lg z-10"
+            id="download-dropdown"
+        >
+            <a
+                href="/astro_resume/en.pdf"
+                class="rounded-md block px-4 py-2 text-sm hover:bg-light-highlightLow dark:hover:bg-dark-highlightLow transition-colors duration-200 ease-in-out"
+                >EN</a
+            >
+            <a
+                href="/astro_resume/pl.pdf"
+                class="rounded-md block px-4 py-2 text-sm hover:bg-light-highlightLow dark:hover:bg-dark-highlightLow transition-colors duration-200 ease-in-out"
+                >PL</a
+            >
+        </div>
+    </button>
+
+    <script>
+        let downloadButton = document.getElementById("download-button");
+        let downloadDropdown = document.getElementById("download-dropdown");
+        downloadButton.addEventListener("click", () => {
+            downloadDropdown.classList.toggle("hidden");
+        });
+        document.body.addEventListener("click", (e) => {
+            if (
+                !downloadButton.contains(e.target) &&
+                !downloadDropdown.contains(e.target)
+            ) {
+                downloadDropdown.classList.add("hidden");
+            }
+        });
+    </script>
     <!--Toggle for language -->
-    <button class="m-auto" id="language-toggle" title="Toggle language">
+    <button
+        class="m-auto hover:text-light-rose hover:dark:text-dark-rose transition-colors duration-200 ease-in-out"
+        id="language-toggle"
+        title="Toggle language"
+    >
         <script is:inline defer>
             const toggleLanguage = () => {
                 console.log("toggling");
@@ -47,7 +104,7 @@ export interface Props {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 print:hidden"
+            class="w-6 h-6 print:hidden duration-200 ease-in-out"
         >
             <path
                 stroke-linecap="round"
@@ -57,7 +114,11 @@ export interface Props {
         </svg>
     </button>
     <!--Toggle for dark mode-->
-    <button class="m-auto" id="darkmode-toggle" title="Toggle theme">
+    <button
+        class="m-auto"
+        id="darkmode-toggle hover:text-light-rose hover:dark:text-dark-rose transition-colors duration-200 ease-in-out"
+        title="Toggle theme"
+    >
         <script is:inline defer>
             if (
                 localStorage.theme === "dark" ||
@@ -116,7 +177,7 @@ export interface Props {
             darkmodeToggle.addEventListener("click", toggleMode);
         </script>
         <svg
-            class="w-6 h-6 text-light-text dark:text-dark-text transition-all print:hidden"
+            class="w-6 h-6 text-light-text dark:text-dark-text hover:text-light-rose hover:dark:text-dark-rose transition-colors duration-200 ease-in-out print:hidden"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
