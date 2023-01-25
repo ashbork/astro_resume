@@ -33,9 +33,11 @@ const { title } = Astro.props;
         <title>{title}</title>
     </head>
     <body
-        class="dark:bg-dark-base bg-light-base transition-colors delay-200 duration-300"
+        class="dark:bg-dark-base bg-light-base transition-colors delay-200 duration-300 m-0 min-h-screen"
     >
-        <div class="flex flex-col items-center justify-center w-full h-screen">
+        <div
+            class="flex flex-col items-center justify-center w-full pt-10 pb-10"
+        >
             <div
                 class="w-full sm:w-3/4 md:w-1/2 border-t-4 dark:border-t-dark-iris border-t-light-iris transition-all dark:bg-dark-surface bg-light-surface dark:text-dark-text text-light-text flex flex-col rounded-md shadow-md rounded-t-none"
             >
