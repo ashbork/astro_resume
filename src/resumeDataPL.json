@@ -32,7 +32,7 @@
             "url": "https://www.livechat.com/",
             "startDate": "2022-06-15",
             "summary": "Obsługa klientów w czasie rzeczywistym, techniczny troubleshooting i automatyzacja procesów przy użyciu języków Python i JavaScript. Bliska współpraca z zespołem deweloperskim, zbieranie i analiza feedbacku, UXR. Budowa narzędzi wewnętrznych przy użyciu Pythona i JavaScriptu.",
-            "highlights": ["Nominowany na Customer Advocate roku 2022", "Dzięki eksperckiej wiedzy i empatycznemu wsparciu osiągnął ~95% CSAT", "Zredukował czasu rozwiązywania wewnętrznych problemów z produktem HelpDesk o ~60%"]
+            "highlights": ["Nominowany na Customer Advocate roku 2022", "Dzięki eksperckiej wiedzy i empatycznemu wsparciu osiągnął ~95% CSAT", "Zredukował czasu rozwiązywania wewnętrznych problemów z produktem HelpDesk o ~60%", "Napisał wiele artykułów w wewnętrznej bazie wiedzy opisujących procesy w produkcie HelpDesk"]
         }
     ],
     "volunteer": [],
@@ -60,7 +60,8 @@
         "Linux",
         "UXR",
         "Wsparcie klienta",
-        "Scala3"
+        "Scala3",
+        "Tworzenie dokumentacji"
     ],
     "languages": [
         {

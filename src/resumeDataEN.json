@@ -32,7 +32,7 @@
             "url": "https://www.livechat.com/",
             "startDate": "2022-06-15",
             "summary": "Real-time customer service, technical troubleshooting and automation of internal processes with use of Python and JS. Close cooperation with the HelpDesk development team, UXR, collection and analysis of customer feedback. ",
-            "highlights": ["'Customer advocate' of 2022 nominee", "Reached ~95% CSAT due to expert knowledge and great attitude", "Reduced the resolution time of internal issues with HelpDesk by ~60%"]
+            "highlights": ["'Customer advocate' of 2022 nominee", "Reached ~95% CSAT due to expert knowledge and great attitude", "Reduced the resolution time of internal issues with HelpDesk by ~60%", "Created multiple technical articles in the internal wiki, detailing processes and workflows"]
         }
     ],
     "volunteer": [],
@@ -60,7 +60,8 @@
         "Linux",
         "UXR",
         "Customer support",
-        "Scala3"
+        "Scala3",
+        "Technical writing"
     ],
     "languages": [
         {
