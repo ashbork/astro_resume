@@ -1,88 +1,120 @@
 {
-    "basics": {
-        "name": "Ashley Borkowicz",
-        "label": "Support Hero / Product Specialist",
-        "image": "",
-        "email": "maybork@pm.me",
-        "phone": "+48 511948508",
-        "summary": "Passionate about programming and providing a great UX. Madly in love with Python and Linux, interested in functional programming. Flexible and empathetic, they're always up for a new challenge.",
-        "location": {
-            "city": "Poznań",
-            "countryCode": "PL"
-        },
-        "profiles": [
-            {
-                "network": "GitHub",
-                "username": "maybork",
-                "url": "https://github.com/ashbork"
-            }, {
-                "network": "LinkedIn",
-                "username": "ashley-borkowicz",
-                "url": "https://www.linkedin.com/in/ashley-borkowicz/"
-
-            }
-        ]
+  "basics": {
+    "name": "Ashley Borkowicz",
+    "label": "Support Hero / Product Specialist",
+    "image": "",
+    "email": "maybork@pm.me",
+    "phone": "+48 511948508",
+    "summary": "Passionate about programming and providing a great UX. Madly in love with Python and Linux, interested in functional programming. Flexible and empathetic, they're always up for a new challenge.",
+    "location": {
+      "city": "Poznań",
+      "countryCode": "PL"
     },
-    "work": [
-        {
-            "name": "LiveChat Inc",
-            "location": "Remote, Poland",
-            "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
-            "position": "Support Hero / Product Specialist",
-            "url": "https://www.livechat.com/",
-            "startDate": "2022-06-15",
-            "summary": "Real-time customer service, technical troubleshooting and automation of internal processes with use of Python and JS. Close cooperation with the HelpDesk development team, UXR, collection and analysis of customer feedback. ",
-            "highlights": ["'Customer advocate' of 2022 nominee", "Reached ~95% CSAT due to expert knowledge and great attitude", "Reduced the resolution time of internal issues with HelpDesk by ~60%", "Created multiple technical articles in the internal wiki, detailing processes and workflows"]
-        }
-    ],
-    "volunteer": [],
-    "education": [
-        {
-            "institution": "Technikum nr 7 im. Polskich Zwycięzców Enigmy Wrocław",
-            "area": "IT specialist",
-            "studyType": "IT specialist",
-            "startDate": "2017-09-01",
-            "endDate": "2021-06-01",
-            "courses": ["EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci (Installation and utilization of computer systems, peripherals and networks)", "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych (Programming, building and administrating websites and databases)"]
-        }
-    ],
-    "awards": [],
-    "publications": [],
-    "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Python w/ mypy",
-        "Flask",
-        "SQL",
-        "Git",
-        "Functional programming",
-        "Linux",
-        "UXR",
-        "Customer support",
-        "Scala3",
-        "Technical writing"
-    ],
-    "languages": [
-        {
-            "language": "Polish",
-            "fluency": "Native"
-        }, {
-            "language": "English",
-            "fluency": "C1"
-        }
-    ],
-    "interests": [
-        {
-
-            "keywords": ["Gaming", "Programming", "Ice skating", "UX"]
-        }
-    ],
-    "references": [],
-    "projects": [],
-    "meta": {
-        "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-        "version": "v1.0.0",
-        "lastModified": "2017-12-24T15:53:00"
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "maybork",
+        "url": "https://github.com/ashbork"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ashley-borkowicz",
+        "url": "https://www.linkedin.com/in/ashley-borkowicz/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "LiveChat Inc",
+      "location": "Remote, Poland",
+      "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
+      "position": "Support Hero / Product Specialist",
+      "url": "https://www.livechat.com/",
+      "startDate": "2022-06-15",
+      "endDate": "2023-03-01",
+      "summary": "Real-time customer service, technical troubleshooting and automation of internal processes with use of Python and JS. Close cooperation with the HelpDesk development team, UXR, collection and analysis of customer feedback. ",
+      "highlights": [
+        "'Customer advocate' of 2022 nominee",
+        "Reached ~95% CSAT due to expert knowledge and great attitude",
+        "Reduced the resolution time of internal issues with HelpDesk by ~60%",
+        "Created multiple technical articles in the internal wiki, detailing processes and workflows"
+      ]
+    },
+    {
+      "name": "LiveChat Inc",
+      "location": "Remote, Poland",
+      "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
+      "position": "Frontend Developer",
+      "url": "https://www.livechat.com/",
+      "startDate": "2023-03-01",
+      "summary": "Development of the HelpDesk product in close collaboration with the team. Participation in the process of designing and brainstorming new and existing functionalities. Technological stack: TypeScript (TS), React, Redux, Jest. Additionally, working on an internal CRM system using Vue and Vuex.",
+      "highlights": [
+        "Assisted in getting HelpDesk to cross 1000 paying customers",
+        "Introduced new versions of React and the internal Design System to the product",
+        "Improved internal processes and tools, improving the team's productivity"
+      ]
     }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Technikum nr 7 im. Polskich Zwycięzców Enigmy Wrocław",
+      "area": "IT specialist",
+      "studyType": "IT specialist",
+      "startDate": "2017-09-01",
+      "endDate": "2021-06-01",
+      "courses": [
+        "EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci (Installation and utilization of computer systems, peripherals and networks)",
+        "EE.09 Programowanie, tworzenie i administrowanie stronami internetowymi i bazami danych (Programming, building and administrating websites and databases)"
+      ]
+    },
+    {
+      "institution": "Uniwersytet Adama Mickiewicza w Poznaniu",
+      "area": "Computer Science",
+      "studyType": "Computer Science",
+      "startDate": "2023-10-01"
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Redux",
+    "Jest",
+    "React Query",
+    "Vue",
+    "Vuex",
+    "Python w/ mypy",
+    "Flask",
+    "Git",
+    "Linux",
+    "UXR",
+    "Technical writing"
+  ],
+  "languages": [
+    {
+      "language": "Polish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ],
+  "interests": [
+    {
+      "keywords": ["Gaming", "Programming", "Ice skating", "UX"]
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
 }
