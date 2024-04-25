@@ -1,22 +1,22 @@
 ---
 const sectionHeaders = {
-    pl: {
-        skills: "Umiejętności",
-        work: "Doświadczenie Zawodowe",
-        education: "Edukacja",
-        languages: "Języki",
-    },
-    en: {
-        skills: "Skills",
-        work: "Professional Experience",
-        education: "Education",
-        languages: "Languages",
-    },
+  pl: {
+    skills: "Umiejętności",
+    work: "Doświadczenie Zawodowe",
+    education: "Edukacja",
+    languages: "Języki",
+  },
+  en: {
+    skills: "Skills",
+    work: "Professional Experience",
+    education: "Education",
+    languages: "Languages",
+  },
 };
 
 export interface Props {
-    language: "pl" | "en";
-    resume;
+  language: "pl" | "en";
+  resume;
 }
 
 const { language, resume } = Astro.props;
@@ -33,10 +33,10 @@ const { basics, skills, work, education, languages } = resume;
 ---
 
 <Layout title="Ashley Borkowicz">
-    <Opts language={language} />
-    <Header basics={basics} language={language} />
-    <Work work={work} title={titles.work} />
-    <Education education={education} title={titles.education} />
-    <Skills skills={skills} title={titles.skills} />
-    <Languages languages={languages} title={titles.languages} />
+  <Opts language={language} />
+  <Header basics={basics} language={language} />
+  <Work work={work} title={titles.work} language={language} />
+  <Education education={education} title={titles.education} />
+  <Skills skills={skills} title={titles.skills} />
+  <Languages languages={languages} title={titles.languages} />
 </Layout>
