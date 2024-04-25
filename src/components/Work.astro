@@ -41,7 +41,7 @@ const workedTime = (startDate: string, endDate?: string) => {
       displayedMonths > 0 ? monthFormatter.format(displayedMonths) : ""
     }`;
   } else {
-    return `${months} months`;
+    return `${monthFormatter.format(months)}`;
   }
 };
 ---
@@ -57,7 +57,8 @@ const workedTime = (startDate: string, endDate?: string) => {
           <h4 class="flex gap-5">
             <span>{item.position}</span>
             <span class="dark:text-dark-subtle text-light-subtle">
-              {item.startDate.slice(0, 7)} - {item.endDate || "ongoing"}
+              {item.startDate.slice(0, 7)} -{" "}
+              {item.endDate || (language === "en" ? "ongoing" : "trwa")}
             </span>
 
             <span class="dark:text-dark-muted text-light-muted">
