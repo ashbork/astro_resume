@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Ashley Borkowicz",
-    "label": "Support Hero / Product Specialist",
+    "label": "Frontend Developer",
     "image": "",
     "email": "maybork@pm.me",
     "phone": "+48 511948508",
@@ -25,7 +25,7 @@
   },
   "work": [
     {
-      "name": "LiveChat Inc",
+      "name": "Text",
       "location": "Remote, Poland",
       "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
       "position": "Support Hero / Product Specialist",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "name": "LiveChat Inc",
+      "name": "Text",
       "location": "Remote, Poland",
       "description": "LiveChat Software is a customer service software company and developer of LiveChat - software as a service-based help desk software and online chat software for e-commerce sales, customer support, and lead generation.",
       "position": "Frontend Developer",
